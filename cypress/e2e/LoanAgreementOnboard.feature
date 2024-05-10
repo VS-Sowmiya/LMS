@@ -8,7 +8,7 @@ Feature: Loan Agreement Onboarding Process
   Scenario: Successful Onboarding of Loan Agreement
     Given a unique XML file named 'accountId_date_time.xml' is transferred to SFTP
     And the file is picked up by the file processor
-    When the file is processed and found to be XSD compliant
+    When the file is processed and found to be XSD-compliant
     And there are no duplicate files
     Then the agreement is successfully onboarded
     And the necessary information is stored in the AGREEMENTS table
